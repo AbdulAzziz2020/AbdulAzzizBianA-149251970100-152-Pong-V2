@@ -138,6 +138,7 @@ Library: lib_burst_generated
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
+--root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
@@ -153,7 +154,6 @@ Library: lib_burst_generated
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
---root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
 --assembly-folder=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\
@@ -301,6 +301,7 @@ Library: lib_burst_generated
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Burst.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.2D.Animation.Runtime.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
+--root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
@@ -316,7 +317,6 @@ Library: lib_burst_generated
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
---root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
 --root-assembly=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
 --assembly-folder=E:\Git Repository\AbdulAzzizBianA-149251970100-152-Pong\Basic Ping Pong\Temp\StagingArea\Data\Managed\
