@@ -115,4 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   choosePlayer: 0
-  speed: 3
+  speed: 5
+  blueEffect: {fileID: 7223671972329553523, guid: e981577932e90c046bbbfd5ad22775f2, type: 3}
+  greenEffect: {fileID: 736642865623624348, guid: 58481df1a0974884e9de408b1e7e91ea, type: 3}

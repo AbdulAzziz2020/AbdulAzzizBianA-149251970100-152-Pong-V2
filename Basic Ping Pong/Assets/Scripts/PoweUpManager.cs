@@ -24,10 +24,10 @@ public class PoweUpManager : MonoBehaviour
         {
             if (timeSpawn < 0)
             {
-                
                 for (int i = 0; i < maxObjectToSpawn; i++)
                 {
                     Destroy(GameObject.FindGameObjectWithTag("Power Up"));
+
                     int randomObject = Random.Range(0, objectToSpawn.Length);
                     float randomAreaX = Random.Range(areaSpawn.bounds.min.x, areaSpawn.bounds.max.x);
                     float randomAreaY = Random.Range(areaSpawn.bounds.min.y, areaSpawn.bounds.max.y);

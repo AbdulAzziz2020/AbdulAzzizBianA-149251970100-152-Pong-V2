@@ -115,3 +115,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 3
+  pickupEffect: {fileID: 2831856728486598690, guid: dc74e660ac7c99e41bd777b062bd63fe, type: 3}

@@ -11,10 +11,11 @@ public class PlayerController : MonoBehaviour
     }
 
     public PlayerState choosePlayer;
-    public float playerSpeed;
+    public int speed;
     public float mapWidth;
 
     private Rigidbody2D rb;
+
     [HideInInspector]
     public float currentSpeed;
 
@@ -22,12 +23,12 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentSpeed = playerSpeed;
+        currentSpeed = speed;
     }
 
     private void FixedUpdate()
     {
-        if(!ScoreManager.isGameEnded)
+        if (!ScoreManager.isGameEnded)
         {
             Movement();
         }
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
-        switch(choosePlayer)
+        switch (choosePlayer)
         {
             case PlayerState.Player1:
                 float player1 = Input.GetAxis("Controller1") * currentSpeed * Time.deltaTime;

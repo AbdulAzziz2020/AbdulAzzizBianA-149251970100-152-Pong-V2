@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject[] obstacles;
+    public GameObject pickupEffect;
     
     private int randNumber;
 
@@ -22,6 +23,9 @@ public class ObstacleSpawner : MonoBehaviour
 
             Instantiate(obstacles[randNumber], Vector2.zero, Quaternion.identity);
             Destroy(gameObject);
+
+            GameObject effect = Instantiate(pickupEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
         }
     }
 }

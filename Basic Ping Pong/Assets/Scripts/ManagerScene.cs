@@ -7,11 +7,21 @@ using TMPro;
 
 public class ManagerScene : MonoBehaviour
 {
+    [Header("Universal")]
+    public float duration = 2f;
+    public GameObject transition;
+    private Animator anim;
+
     [Header("For Main Menu")]
     [SerializeField]
     private TMP_InputField setMaxScore;
     [SerializeField]
     private TMP_Text placeHolder;
+
+    private void Start()
+    {
+        anim = transition.GetComponent<Animator>();
+    }
 
     #region Scene Manager
     public void Play()
@@ -22,7 +32,7 @@ public class ManagerScene : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Game");
+            StartCoroutine(Transition("Game"));
 
             ScoreManager.scorePlayer1 = 0;
             ScoreManager.scorePlayer2 = 0;
@@ -34,7 +44,7 @@ public class ManagerScene : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("Game");
+        StartCoroutine(Transition("Game"));
 
         ScoreManager.scorePlayer1 = 0;
         ScoreManager.scorePlayer2 = 0;
@@ -42,12 +52,32 @@ public class ManagerScene : MonoBehaviour
 
     public void Home()
     {
-        SceneManager.LoadScene("Main Menu");
+        StartCoroutine(Transition("Main Menu"));
+    }
+
+    public void Credit()
+    {
+        StartCoroutine(Transition("Credit"));
     }
 
     public void Quit()
     {
         Application.Quit();
     }
+
+    public void MoreGames(string url)
+    {
+        Application.OpenURL(url);
+    }
     #endregion
+
+    IEnumerator Transition(string sceneName)
+    { 
+        anim.SetTrigger("Start");
+
+        yield return new WaitForSeconds(duration);
+
+        SceneManager.LoadScene(sceneName);
+
+    }
 }

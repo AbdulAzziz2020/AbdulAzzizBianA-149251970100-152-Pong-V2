@@ -8,6 +8,11 @@ public class BallController : MonoBehaviour
     public float delay = 2f;
     public float speed;
 
+    [Header("Effect")]
+    public GameObject redBlueEffect;
+    public GameObject redGreenEffect;
+    public GameObject redWhiteEffect;
+
     #endregion
 
     #region Private Variable
@@ -16,6 +21,7 @@ public class BallController : MonoBehaviour
 
     private Rigidbody2D rb;
     private GameObject circle;
+    private SpriteRenderer defaultColor;
 
     #endregion
 
@@ -24,6 +30,7 @@ public class BallController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         circle = GameObject.Find("Circle");
+        defaultColor = GetComponent<SpriteRenderer>();
     }
 
     public void Start()
@@ -78,11 +85,30 @@ public class BallController : MonoBehaviour
             StartCoroutine(ResetPosition());
         }
 
-        if (collision.gameObject.CompareTag("Player1") || collision.gameObject.CompareTag("Player2"))
+        if(collision.gameObject.CompareTag("Player1"))
         {
             float angle = (transform.position.y - collision.transform.position.y) * 5f;
             Vector2 direction = new Vector2(rb.velocity.x, angle).normalized;
             rb.velocity = direction * currentSpeed;
+
+            GameObject effect = Instantiate(redBlueEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+        } 
+        
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            float angle = (transform.position.y - collision.transform.position.y) * 5f;
+            Vector2 direction = new Vector2(rb.velocity.x, angle).normalized;
+            rb.velocity = direction * currentSpeed;
+
+            GameObject effect = Instantiate(redGreenEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+        }
+
+        if(collision.gameObject.CompareTag("Obstacles") || collision.gameObject.CompareTag("Limiter"))
+        {
+            GameObject effect = Instantiate(redWhiteEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
         }
     }
 
@@ -96,15 +122,16 @@ public class BallController : MonoBehaviour
         rb.velocity = Vector2.zero;
         currentSpeed = speed;
         transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        defaultColor.color = Color.red;
         
         GameObject obstacle = GameObject.FindGameObjectWithTag("Obstacles");
         Destroy(obstacle);
 
         GameObject player1 = GameObject.FindGameObjectWithTag("Player1");
-        player1.GetComponent<PlayerController>().currentSpeed = player1.GetComponent<PlayerController>().playerSpeed;
+        player1.GetComponent<PlayerController>().currentSpeed = player1.GetComponent<PlayerController>().speed;
 
         GameObject player2 = GameObject.FindGameObjectWithTag("Player2");
-        player2.GetComponent<PlayerController>().currentSpeed = player2.GetComponent<PlayerController>().playerSpeed;
+        player2.GetComponent<PlayerController>().currentSpeed = player2.GetComponent<PlayerController>().speed;
     }
 
     public void SpeedUp(int speed)

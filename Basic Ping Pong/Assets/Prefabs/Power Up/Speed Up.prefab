@@ -115,3 +115,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedUp: 5
+  pickupEffect: {fileID: 8892842572223594381, guid: bc25eff0369053d40a8a2b133f28c96a, type: 3}

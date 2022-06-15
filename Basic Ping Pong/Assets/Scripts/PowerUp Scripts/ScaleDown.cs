@@ -6,12 +6,15 @@ public class ScaleDown : MonoBehaviour
 {
     public int multiplier = 2;
     public int speed = 5;
+    public GameObject pickupEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("ball"))
         {
-            //add particle effect
+            GameObject effect = Instantiate(pickupEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+
             collision.GetComponent<BallController>().ScaleDown(multiplier, speed);
             Destroy(gameObject);
         }

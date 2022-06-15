@@ -11,7 +11,9 @@ public class PlayerSpeedUp : MonoBehaviour
     }
 
     public PlayerState choosePlayer;
-    public float speed = 5f;
+    public int speed = 5;
+    public GameObject blueEffect;
+    public GameObject greenEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,12 +25,18 @@ public class PlayerSpeedUp : MonoBehaviour
                     GameObject player1 = GameObject.FindGameObjectWithTag("Player1");
                     player1.GetComponent<PlayerController>().currentSpeed += speed;
                     Destroy(gameObject);
+
+                    GameObject effect1 = Instantiate(blueEffect, transform.position, Quaternion.identity);
+                    Destroy(effect1, 1f);
                     break;
 
                 case PlayerState.player2:
                     GameObject player2 = GameObject.FindGameObjectWithTag("Player2");
                     player2.GetComponent<PlayerController>().currentSpeed += speed;
                     Destroy(gameObject);
+
+                    GameObject effect2 = Instantiate(blueEffect, transform.position, Quaternion.identity);
+                    Destroy(effect2, 1f);
                     break;
             }
         }

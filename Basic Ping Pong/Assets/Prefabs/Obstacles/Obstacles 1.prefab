@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3137673206890474482}
   m_Layer: 0
   m_Name: (1)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 3137673207564815147}
   m_Layer: 0
   m_Name: (2)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -103,6 +103,7 @@ MonoBehaviour:
   - {fileID: 8975480535725345949, guid: d75251a0c24fce04b80ff814719c5515, type: 3}
   - {fileID: 8975480535725345949, guid: 8afdf9dca3e9b5f4a8a8392b4141e1e1, type: 3}
   - {fileID: 8975480535725345949, guid: 9c1211ac85661464a9884fa9f88b8282, type: 3}
+  pickupEffect: {fileID: 5191479230096650461, guid: 44c05eed8ad6b2646860b8a4cb3f06ef, type: 3}
 --- !u!70 &5838570019744504247
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
